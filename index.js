@@ -9,19 +9,16 @@ class Heroi {
         let ataque;
         if (this.tipo === 'mago') {
             ataque = "magia";
-            console.log(`O ${this.tipo} ${this.nome} atacou usando ${ataque}`);
         } else if (this.tipo === 'guerreiro') {
             ataque = "espada";
-            console.log(`O ${this.tipo} ${this.nome} atacou usando ${ataque}`);
         } else if (this.tipo === 'monge') {
             ataque = "artes marciais";
-            console.log(`O ${this.tipo} ${this.nome} atacou usando ${ataque}`);
         } else if (this.tipo === 'ninja') {  
             ataque = "shuriken";
-            console.log(`O ${this.tipo} ${this.nome} atacou usando ${ataque}`);
         } else {
-            console.log(`O ${this.tipo} ${this.nome} não tem um ataque definido.`);
+            ataque = "ataque não definido";
         }
+        console.log(`O ${this.tipo} ${this.nome} atacou usando ${ataque}.`);
     }
 }
 
